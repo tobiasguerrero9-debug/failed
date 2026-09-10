@@ -4,10 +4,7 @@ export const MascotScanner: React.FC = () => {
   return (
     <div className="relative flex flex-col items-center justify-center w-full max-w-[560px] sm:max-w-[640px] lg:max-w-[680px] mx-auto select-none">
       
-      {/* Soft Bottom Floor Shadow Pool */}
-      <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[70%] h-12 bg-[#1D103A]/20 rounded-[100%] blur-xl pointer-events-none" />
-
-      {/* High-Resolution 100% Transparent 3D Computer Mascot */}
+      {/* High-Quality 3D Computer Mascot */}
       <div className="relative z-10 w-full flex justify-center">
         <img
           src="/assets/mascot-v2.png"
