@@ -4,18 +4,18 @@ import { siteConfig } from '../config/site';
 
 export const Navbar: React.FC = () => {
   return (
-    <header className="w-full pt-6 pb-4">
-      <div className="max-w-site mx-auto px-6 sm:px-10 xl:px-14 flex items-center justify-between">
+    <header className="w-full pt-8 pb-4">
+      <div className="max-w-site mx-auto px-8 sm:px-12 xl:px-16 flex items-center justify-between">
         
-        {/* Left: FAILED Logo / Wordmark */}
+        {/* Left: FAILED Wordmark */}
         <Link to="/" className="flex items-center gap-3 group">
-          <span className="font-pixel text-lg sm:text-xl tracking-wider text-[#1D103A] font-bold group-hover:opacity-80 transition-opacity">
+          <span className="font-pixel text-lg sm:text-xl tracking-wider text-[#1D103A] font-bold">
             FAILED
           </span>
         </Link>
 
-        {/* Right: Minimal Navigation Links */}
-        <nav className="flex items-center gap-6 sm:gap-8 text-sm font-semibold tracking-wide text-[#391464]/80">
+        {/* Right: Minimal Links */}
+        <nav className="flex items-center gap-8 text-sm font-semibold tracking-wide text-[#5B4B8A]">
           <a 
             href="#data" 
             className="hover:text-[#1D103A] transition-colors"
