@@ -6,7 +6,8 @@
 
 @layer base {
   html, body {
-    background-color: #E5DFFF;
+    background: radial-gradient(circle 900px at 50% 40%, #ECE7FF 0%, #C8C0FC 65%, #BEB5FA 100%);
+    background-attachment: fixed;
     color: #1D103A;
     font-family: 'Space Grotesk', sans-serif;
     overflow-x: hidden;
@@ -15,24 +16,23 @@
   }
 }
 
-/* Light Lavender Ambient Scene */
-.lavender-bg {
-  background: 
-    radial-gradient(circle 800px at 50% 30%, #ECE8FF 0%, #E5DFFF 60%, #DCD4FF 100%);
+/* Atmospheric Approved Lavender Background */
+.approved-lavender-bg {
+  background: radial-gradient(circle 900px at 50% 40%, #ECE7FF 0%, #C8C0FC 65%, #BEB5FA 100%);
 }
 
-/* CRT Screen Interior Glow & Scanlines */
+/* CRT Screen Interior */
 .crt-screen-bg {
   background-color: #03140A;
   background-image: 
-    radial-gradient(ellipse 90% 80% at 50% 50%, rgba(0, 255, 102, 0.22) 0%, rgba(3, 20, 10, 0.95) 100%),
+    radial-gradient(ellipse 90% 80% at 50% 50%, rgba(0, 255, 102, 0.25) 0%, rgba(3, 20, 10, 0.95) 100%),
     linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.4) 50%);
   background-size: 100% 100%, 100% 4px;
 }
 
 .text-crt-green {
   color: #00FF66;
-  text-shadow: 0 0 8px rgba(0, 255, 102, 0.7), 0 0 16px rgba(0, 255, 102, 0.4);
+  text-shadow: 0 0 10px rgba(0, 255, 102, 0.8), 0 0 20px rgba(0, 255, 102, 0.5);
 }
 
 /* Custom Scrollbar */
@@ -40,12 +40,12 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #E5DFFF;
+  background: #C8C0FC;
 }
 ::-webkit-scrollbar-thumb {
-  background: #C9BAFF;
+  background: #A99BFA;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #B096FF;
+  background: #8E7BFA;
 }
