@@ -7,22 +7,28 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: {
-          darkest: "#05030D",
-          deep: "#090616",
-          violet: "#110724",
-          card: "rgba(13, 8, 26, 0.65)",
+        lavender: {
+          50: "#F7F5FF",
+          100: "#ECE8FF",
+          200: "#E5DFFF",
+          300: "#DCD4FF",
+          400: "#C9BAFF",
+          500: "#B096FF",
+          dark: "#1A0F35",
+          text: "#1D103A",
+          muted: "#6B5A94"
         },
-        brand: {
-          violetDeep: "#261046",
-          purpleDark: "#391464",
-          purple: "#7B3FF2",
-          purpleBright: "#A95CFF",
-          purpleLight: "#C778FF",
-          greenNeon: "#00F58A",
-          greenMint: "#32F5A6",
-          greenLight: "#73FFC1",
-          greenHighlight: "#8AFFB7",
+        scanLime: {
+          DEFAULT: "#BFFF47",
+          bright: "#B5FE33",
+          hover: "#ACFA1A",
+          dark: "#0F2600"
+        },
+        crtGreen: {
+          DEFAULT: "#00FF66",
+          bright: "#33FF77",
+          glow: "rgba(0, 255, 102, 0.4)",
+          dark: "#003A17"
         }
       },
       fontFamily: {
@@ -31,25 +37,13 @@ export default {
         mono: ['"JetBrains Mono"', 'monospace'],
       },
       maxWidth: {
-        'site': '1520px',
+        'site': '1440px',
       },
       boxShadow: {
-        'neon-green': '0 0 35px -5px rgba(0, 245, 138, 0.5), 0 0 15px -2px rgba(0, 245, 138, 0.3)',
-        'neon-purple': '0 0 35px -5px rgba(123, 63, 242, 0.5), 0 0 15px -2px rgba(123, 63, 242, 0.3)',
-      },
-      animation: {
-        'float-slow': 'float 7s ease-in-out infinite',
-        'pulse-glow': 'pulseGlow 4s ease-in-out infinite alternate',
-      },
-      keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-12px)' },
-        },
-        pulseGlow: {
-          '0%': { opacity: '0.4' },
-          '100%': { opacity: '0.85' },
-        }
+        'input-pill': '0 12px 35px -5px rgba(123, 63, 242, 0.18), 0 4px 15px -2px rgba(123, 63, 242, 0.1)',
+        'lime-btn': '0 4px 20px rgba(191, 255, 71, 0.4)',
+        'crt-glow': '0 0 25px rgba(0, 255, 102, 0.4)',
+        'computer-shadow': '0 30px 60px -15px rgba(123, 63, 242, 0.25), 0 15px 30px -10px rgba(29, 16, 58, 0.15)'
       }
     },
   },
